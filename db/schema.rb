@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20160617183815) do
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
     t.boolean  "admin",           default: false
-    t.text     "shoppingcart",    default: [],                 array: true
+    t.string   "shoppingcart"
   end
 
 end
