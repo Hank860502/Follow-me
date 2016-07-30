@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Trick || Treat
+    %title 我跟你走
     %script{:crossorigin => "anonymous", :integrity => "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", :src => "https://code.jquery.com/jquery-2.2.4.min.js"}
     / %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"}
     / %script{:src => "../assets/javascripts/application.js"}
@@ -13,37 +13,33 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
   %body
-    %div.container
-      %nav.navbar.navbar-default
-        .container-fluid
-          .navbar-header
-            %a.navbar-brand{:href => products_path} Trick || Treat
-          %ul.nav.navbar-nav
-            -if logged_in && current_user.admin
-              %li
-                %a{:href => admin_products_path } Admin Panel
-            -if logged_in
-              %li
-                %a{:href => logout_path } Logout
-              %li
-                %a{:href => user_path(current_user)}
-                  %span.glyphicon.glyphicon-shopping-cart
-                  Shopping Cart
+    %nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          %a.navbar-brand{:href => home_index_path} 我跟你走
+        %ul.nav.navbar-nav
+          -if logged_in
+            %li
+              %a{:href => logout_path } Logout
+            %li
+              %a{:href => user_path(current_user)}
+                %span.glyphicon.glyphicon-shopping-cart
+                Shopping Cart
 
 
-            -else
-              %li
-                %a{:href => new_user_path } Register
-              %li
-                %a{:href => login_path } Login
-            %li.dropdown
-              %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-                Product Categories
-                %span.caret
-              %ul.dropdown-menu
-                - @category_names.each do |category|
-                  %li.text-center
-                    =link_to category.name, category_path(category)
-                  %li.divider
-
-      = yield
+          -else
+            %li
+              %a{:href => new_user_path } 註冊
+            %li
+              %a{:href => login_path } 登入
+          %li.dropdown
+            %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+              地區
+              %span.caret
+            %ul.dropdown-menu
+              - @region_names.each do |region|
+                %li.text-center
+                  =link_to region.name, region_path(region)
+                %li.divider
+  .container
+    = yield

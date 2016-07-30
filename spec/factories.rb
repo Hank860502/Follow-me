@@ -1,4 +1,7 @@
 FactoryGirl.define do
+  factory :region do
+    
+  end
   factory :products_category do
     
   end

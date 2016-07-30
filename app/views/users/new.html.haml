@@ -11,10 +11,22 @@
     %br
     = f.text_field :name, class: 'form-control'
 
+
   .form-group
-    = f.label :email
+    = f.label :age
     %br
-    = f.text_field :email, class: 'form-control'
+    = f.text_field :age, class: 'form-control'
+
+  .form-group
+    %label.control-label{:for => "region"} Region
+    %br
+      %select#region.form-control
+        %option{:value => 1}台北
+        %option{:value => 2} 台中
+        %option{:value => 3} 北京
+        %option{:value => 4} 上海
+        %option{:value => 5} 香港
+        %option{:value => 6}新加坡
 
   .form-group
     = f.label :password

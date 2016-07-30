@@ -14,10 +14,11 @@ class ApplicationController < ActionController::Base
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
 
-  before_filter :category_names
+  before_filter :region_names
 
-  def category_names
-  @category_names = Category.all
+  def region_names
+    @region_names = Region.all
   end
+
 
 end

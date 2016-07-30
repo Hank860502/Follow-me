@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   resources :users
   resources :categories
   resources :carts
+  resources :home
+  resources :region
+
 
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'

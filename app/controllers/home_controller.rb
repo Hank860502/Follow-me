@@ -1,5 +1,8 @@
 class HomeController < ApplicationController
-  def index
-    redirect_to products_path
-  end
+	def index
+	end
+
+	def show
+
+	end
 end
