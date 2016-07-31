@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Ye Olde Online Shoppe
 
 ### Overview
@@ -52,3 +53,7 @@ The iterations are provided below. As you complete them, you will meet with your
 Move through the the items above __as quickly__ as you can, without much attachment. These are just a starting point.  As we gather feedback and learn more about what it takes to develop the app, we want to be able to change these easily.  'Cause that's Agile and that's how we do it.
 
 Happy Hacking, now GO Build! <3
+=======
+# Follow-me
+2016 Makerthon in Shanghai
+>>>>>>> 86158797ca2dea9e79b3fb5239e921ef716dd8b8
