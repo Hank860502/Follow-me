@@ -1,4 +1,4 @@
-%h2 Register
+%h2 成為我們的一份子
 
 = form_for :user, url: users_path do |f|
 
@@ -39,8 +39,8 @@
     = f.password_field :confirm_password, class: 'form-control'
 
   .form-group
-    = f.submit :'Register', class: 'btn btn-success'
+    = f.submit :'註冊', class: 'btn btn-success'
 
-= link_to 'Back', products_path
+= link_to '返回主頁', home_index_path
 %br
-= link_to 'Already a member? Login!', login_path
+= link_to '已經有帳號了嗎？登入吧', login_path
