@@ -14,8 +14,8 @@
     = csrf_meta_tags
   %body
     %nav.navbar.navbar-default
-      %a.navbar-brand{:href => home_index_path} 我跟你走
-      %ul.nav.navbar-nav.text-right
+      %a.navbar-brand.text-right{:href => home_index_path} 我跟你走
+      %ul.nav.navbar-nav
         -if logged_in
           %li
             %a{:href => logout_path } Logout
@@ -39,7 +39,7 @@
               %li.text-center
                 =link_to region.name, region_path(region)
               %li.divider
-      %form.form-inline.pull-xs-right.text-right
+      %form.form-inline.pull-xs-right
         %input.form-control{:placeholder => "Search", :type => "text"}/
         %button.btn.btn-outline-success{:type => "submit"} Search
   
@@ -47,8 +47,7 @@
     = yield
   %footer
     %nav.navbar.navbar-inverse
-      %a.navbar-brand{:href => home_index_path, :style => "#"} 我跟你走
-      %ul.nav.navbar-nav.text-right
+      %ul.nav.navbar-nav
         %li
           %a{:href => "#"}
             %span.glyphicon.glyphicon-copyright-mark
