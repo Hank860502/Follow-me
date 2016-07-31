@@ -1,0 +1,10 @@
+#black {
+	background-color: black;
+}
+
+.bigImage{
+	width: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

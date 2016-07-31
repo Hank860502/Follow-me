@@ -5,6 +5,7 @@ class CreateUsers < ActiveRecord::Migration
       t.integer :age
       t.integer :region_id
       t.string :image
+      t.string :skype
       t.boolean :guide, default: :false
       t.string :password_digest
 

@@ -1,0 +1,19 @@
+- region_image = "../" + @region.image
+%img.container{:src => region_image, :height => 700, margin_top:0}
+%br
+%br
+%h3.text-center 我們的導遊
+.row
+	- @users.each do |user|
+		- user_image = "../" + user.image
+		.col-md-4
+			.panel.panel-primary
+				.panel-heading
+				%a{:href => user_path(user)}
+					%img.img-responsive{:alt => "", :src => "#{user_image}", :style => "height:300px"}
+				.panel-footer#panel
+					=user.name
+				.panel-footer#panel
+					%a.btn.btn-primary.btn-lg{:href => "#", :role => "button"}
+						%span.glyphicon.glyphicon-earphone
+						=user.skype

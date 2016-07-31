@@ -1,1 +1,13 @@
+%img.container{:src => "couple-travel.jpg", margin_left:0}/
+%br
+%br
+%br
+.row
+- @regions.each do |region|
+	.col-xs-6.col-md-6
+		%a.thumbnail{:href => region_path(region)}
+			%img{:alt => "", :src => "#{region.image}"}
+			%br
+
+
 
