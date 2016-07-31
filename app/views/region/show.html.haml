@@ -2,7 +2,10 @@
 %img.container{:src => region_image, :height => 700, margin_top:0}
 %br
 %br
-%h3.text-center 我們的導遊
+%h2.text-center 我們的導遊
+%h4.text-center 讓他們陪伴您的奇幻之旅
+%br
+%br
 .row
 	- @users.each do |user|
 		- user_image = "../" + user.image
@@ -13,7 +16,8 @@
 					%img.img-responsive{:alt => "", :src => "#{user_image}", :style => "height:300px"}
 				.panel-footer#panel
 					=user.name
-				.panel-footer#panel
-					%a.btn.btn-primary.btn-lg{:href => "#", :role => "button"}
-						%span.glyphicon.glyphicon-earphone
-						=user.skype
+				- if logged_in
+					.panel-footer#panel
+						%a.btn.btn-primary.btn-sm{:href => "#", :role => "button"}
+							%span.glyphicon.glyphicon-earphone
+							=user.skype

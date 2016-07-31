@@ -14,15 +14,17 @@
     = csrf_meta_tags
   %body
     %nav.navbar.navbar-default
-      %a.navbar-brand.text-right{:href => home_index_path} 我跟你走
-      %ul.nav.navbar-nav
+      %img.navbar-nav.navbar-brand{:src =>"../footprint.png"}
+      %a.navbar-brand{:href => home_index_path} 我跟你走
+      %form.navbar-form.navbar-right
+        .form-group
+          %input.form-control{:placeholder => "搜尋目的地", :type => "text"}/
+        %button.btn.btn-default{:type => "submit"} 搜尋
+
+      %ul.nav.navbar-nav.navbar-right
         -if logged_in
           %li
-            %a{:href => logout_path } Logout
-          %li
-            %a{:href => user_path(current_user)}
-              %span.glyphicon.glyphicon-shopping-cart
-              Shopping Cart
+            %a{:href => logout_path } 登出
 
 
         -else
@@ -39,17 +41,17 @@
               %li.text-center
                 =link_to region.name, region_path(region)
               %li.divider
-      %form.form-inline.pull-xs-right
-        %input.form-control{:placeholder => "Search", :type => "text"}/
-        %button.btn.btn-outline-success{:type => "submit"} Search
   
   .container
     = yield
   %footer
     %nav.navbar.navbar-inverse
-      %ul.nav.navbar-nav
+      %ul.nav.navbar-nav.navbar-right
         %li
-          %a{:href => "#"}
+          %a{:href => "https://www.linkedin.com/in/hank860502"}
+            Contact us
+        %li
+          %a{:href => "https://github.com/Hank860502"}
             %span.glyphicon.glyphicon-copyright-mark
             Han-Yu Chen
 
