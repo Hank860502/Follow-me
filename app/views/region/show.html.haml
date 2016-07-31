@@ -21,3 +21,10 @@
 						%a.btn.btn-primary.btn-sm{:href => "#", :role => "button"}
 							%span.glyphicon.glyphicon-earphone
 							=user.skype
+				-else
+					.panel-footer#panel
+						%a.btn.btn-primary.btn-sm{:href => login_path, :role => "button"}
+							%span.glyphicon.glyphicon-earphone
+							登入與導遊聯絡
+%br
+%br
