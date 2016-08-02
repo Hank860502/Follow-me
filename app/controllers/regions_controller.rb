@@ -1,4 +1,4 @@
-class RegionController < ApplicationController
+class RegionsController < ApplicationController
 
 	def index
 		@regions = Region.all
@@ -10,3 +10,6 @@ class RegionController < ApplicationController
 	end
 
 end
+
+
+# region needs to be named as regions!!!!
