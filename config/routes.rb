@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :carts
   resources :home
-  resources :region
+  resources :regions
 
 
   get    'login'   => 'sessions#new'

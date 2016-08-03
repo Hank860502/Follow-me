@@ -1,0 +1,18 @@
+%img.container{:src => "couple-travel.jpg", margin_left:0}/
+%br
+%br
+%br
+%h2.text-center 找到你的目的地
+%h4.text-center 馬上去尋找屬於你的在地導遊
+%br
+%br
+.row
+- @regions.each do |region|
+	.col-xs-6.col-md-6
+		%a.thumbnail{:href => region_path(region)}
+			%img{:alt => "", :src => "#{region.image}"}
+			%br
+%br
+%br
+%br
+%br

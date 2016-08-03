@@ -30,8 +30,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = current_user
-    redirect_to '/carts/show'
+    @guide = User.find(params[:id])
+    
   end
 
 
