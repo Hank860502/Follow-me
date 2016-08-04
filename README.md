@@ -4,6 +4,9 @@
 ##About
 Platform for available tour guide and traveller to exchange contact information.
 
+##Link to the web
+https://followyou.herokuapp.com/regions
+
 ##Technologies used
 
 - Smart Glasses
