@@ -53345,3 +53345,41 @@ Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476
 
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-04 18:09:46 +0800
+
+
+Started GET "/regions" for ::1 at 2016-08-04 18:18:12 +0800
+Processing by RegionsController#index as HTML
+  [1m[35mRegion Load (0.4ms)[0m  SELECT "regions".* FROM "regions"
+  Rendered regions/index.html.haml within layouts/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 86ms (Views: 85.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-04 18:18:12 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-04 18:18:12 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-04 18:18:12 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-04 18:18:12 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-04 18:18:12 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-04 18:18:12 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-04 18:18:12 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-04 18:18:12 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-04 18:18:12 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-04 18:18:12 +0800
