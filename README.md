@@ -5,7 +5,7 @@
 Platform for available tour guides and travellers to exchange contact information.
 
 ##Link to the web
-https://followyou.herokuapp.com/regions
+https://followyou.herokuapp.com
 
 ##Technologies used
 
