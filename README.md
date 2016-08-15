@@ -2,8 +2,8 @@
 2016 Makerthon in Shanghai
 
 ##About
-Platform for available tour guides and travellers to exchange contact information.
-
+- Platform for available tour guides and travellers to exchange contact information.
+- Create a hand free and customized travel experience through our platform
 ##Link to the web
 https://followyou.herokuapp.com
 
