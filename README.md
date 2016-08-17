@@ -11,8 +11,7 @@ https://followyou.herokuapp.com
 ##Technologies used
 
 - Smart Glasses
-- Ruby on Rails
-- Bootstrap
+- Web application -Ruby on Rails
 
 ![alt tag](https://cloud.githubusercontent.com/assets/17296898/17398064/809174c4-5a6d-11e6-94bb-19103b7d5b27.png)
 
