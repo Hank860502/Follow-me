@@ -53383,3 +53383,1849 @@ Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476
 
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-04 18:18:12 +0800
+
+
+Started GET "/" for ::1 at 2016-08-19 08:23:26 +0800
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/hank8652/.rbenv/versions/2.1.5/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/hank8652/.rbenv/versions/2.1.5/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.6) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.6) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.6) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.6) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `<main>'
+
+
+
+Started POST "/__better_errors/b7402ba99cbb7147/variables" for ::1 at 2016-08-19 08:23:27 +0800
+
+
+Started GET "/favicon.ico" for ::1 at 2016-08-19 08:23:27 +0800
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+:
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/hank8652/.rbenv/versions/2.1.5/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/hank8652/.rbenv/versions/2.1.5/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.6) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.6) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.6) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.6) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `<main>'
+
+
+
+Started GET "/" for ::1 at 2016-08-19 08:23:44 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (4.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:23:45 +0800
+Processing by RegionsController#index as HTML
+  [1m[35mRegion Load (5.1ms)[0m  SELECT "regions".* FROM "regions"
+  Rendered regions/index.html.haml within layouts/application (42.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 716ms (Views: 686.2ms | ActiveRecord: 29.5ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:23:45 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:23:45 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:23:46 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:23:46 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:23:46 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:23:46 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:23:46 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:23:46 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:23:46 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:23:46 +0800
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:23:49 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (598.6ms)
+  [1m[35mRegion Load (0.6ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 648ms (Views: 632.7ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/users" for ::1 at 2016-08-19 08:24:09 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xgQ+BROCO9oyeq3pnfYwx9XRydHZwVYc5kPz8yAlCTrI8QDMRBrGIaFmxA2qwa9Y/RkmcyH0rMIC5yMgGMJ44g==", "user"=>{"name"=>"hank", "age"=>"12", "password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"註冊"}
+Unpermitted parameters: age, confirm_password
+  [1m[36m (5.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (8.3ms)[0m  INSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "hank"], ["password_digest", "$2a$10$0JrXQfr5DlXZBYzo4c/pXOq30sDU9wWVFsUt453GWgJmTcvMQYswW"], ["created_at", "2016-08-19 00:24:09.291803"], ["updated_at", "2016-08-19 00:24:09.291803"]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 146ms (ActiveRecord: 16.1ms)
+
+NameError - uninitialized constant UsersController::ExampleMailer:
+  activesupport (4.2.6) lib/active_support/dependencies.rb:533:in `load_missing_constant'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:184:in `const_missing'
+  app/controllers/users_controller.rb:16:in `block in create'
+  actionpack (4.2.6) lib/action_controller/metal/mime_responds.rb:212:in `respond_to'
+  app/controllers/users_controller.rb:13:in `create'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `<main>'
+
+
+
+Started POST "/__better_errors/a6e1eaf7eafa6e3a/variables" for ::1 at 2016-08-19 08:24:09 +0800
+  [1m[35mRegion Load (0.3ms)[0m  SELECT "regions".* FROM "regions"
+
+
+Started GET "/favicon.ico" for ::1 at 2016-08-19 08:24:09 +0800
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/hank8652/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/hank8652/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/hank8652/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.9ms)
+  Rendered /Users/hank8652/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/hank8652/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (91.4ms)
+
+
+Started POST "/users" for ::1 at 2016-08-19 08:25:13 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xgQ+BROCO9oyeq3pnfYwx9XRydHZwVYc5kPz8yAlCTrI8QDMRBrGIaFmxA2qwa9Y/RkmcyH0rMIC5yMgGMJ44g==", "user"=>{"name"=>"hank", "age"=>"12", "password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"註冊"}
+Unpermitted parameters: age, confirm_password
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "hank"], ["password_digest", "$2a$10$LM3B407istXomE.Y36.P7uCO09OjpTnKkm.I6of5uG4tvx1BNtBhC"], ["created_at", "2016-08-19 00:25:13.691167"], ["updated_at", "2016-08-19 00:25:13.691167"]]
+  [1m[36m (4.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/20
+Completed 302 Found in 104ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/users/20" for ::1 at 2016-08-19 08:25:13 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mUser Load (3.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 20]]
+  Rendered users/show.html.haml within layouts/application (1.5ms)
+  [1m[36mRegion Load (0.6ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 115ms (Views: 85.4ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:25:13 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:25:13 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:25:13 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:25:13 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:25:13 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:25:13 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:25:13 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:25:13 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:25:13 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:25:13 +0800
+
+
+Started GET "/users/20" for ::1 at 2016-08-19 08:25:54 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 20]]
+  Rendered users/show.html.haml within layouts/application (0.2ms)
+  [1m[36mRegion Load (0.3ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 50ms (Views: 31.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:25:54 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:25:54 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:25:54 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:25:54 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:25:54 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:25:54 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:25:54 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:25:54 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:25:54 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:25:54 +0800
+
+
+Started POST "/users" for ::1 at 2016-08-19 08:26:01 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xgQ+BROCO9oyeq3pnfYwx9XRydHZwVYc5kPz8yAlCTrI8QDMRBrGIaFmxA2qwa9Y/RkmcyH0rMIC5yMgGMJ44g==", "user"=>{"name"=>"hank", "age"=>"12", "password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"註冊"}
+Unpermitted parameters: age, confirm_password
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "hank"], ["password_digest", "$2a$10$obP1FeDwN19sbNW3iYpMXugkJCM.fxiqiD5f5RsdU4VXwsC9.63nS"], ["created_at", "2016-08-19 00:26:01.703403"], ["updated_at", "2016-08-19 00:26:01.703403"]]
+  [1m[35m (2.2ms)[0m  COMMIT
+  [1m[36mRegion Load (0.4ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 2.6ms)
+
+NameError - undefined local variable or method `home' for #<UsersController:0x007fc743fbd260>:
+  app/controllers/users_controller.rb:17:in `block (2 levels) in create'
+  actionpack (4.2.6) lib/action_controller/metal/mime_responds.rb:217:in `respond_to'
+  app/controllers/users_controller.rb:13:in `create'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `<main>'
+
+
+
+Started POST "/__better_errors/243f6633b1d1f286/variables" for ::1 at 2016-08-19 08:26:01 +0800
+
+
+Started POST "/users" for ::1 at 2016-08-19 08:26:16 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xgQ+BROCO9oyeq3pnfYwx9XRydHZwVYc5kPz8yAlCTrI8QDMRBrGIaFmxA2qwa9Y/RkmcyH0rMIC5yMgGMJ44g==", "user"=>{"name"=>"hank", "age"=>"12", "password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"註冊"}
+Unpermitted parameters: age, confirm_password
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "hank"], ["password_digest", "$2a$10$qBJX/vSj0OMQaulDmGDkgu19gDscq/fSXEvm2QiSPWn9g7oL9zDb6"], ["created_at", "2016-08-19 00:26:16.953031"], ["updated_at", "2016-08-19 00:26:16.953031"]]
+  [1m[35m (2.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/home
+Completed 302 Found in 107ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/home" for ::1 at 2016-08-19 08:26:16 +0800
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:26:16 +0800
+Processing by RegionsController#index as HTML
+  [1m[36mRegion Load (0.4ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+  Rendered regions/index.html.haml within layouts/application (6.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 60ms (Views: 57.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:26:17 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:26:17 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:26:17 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:26:17 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:26:17 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:26:17 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:26:17 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:26:17 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:26:17 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:26:17 +0800
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:26:32 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (5.1ms)
+  [1m[36mRegion Load (0.4ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2016-08-19 08:26:50 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cTBmbIquzjni5wBSo2UE2kZpfbAjdIVpHoSvjtFA9Dt/xVil3TYzwnH7abaUUptFbqGSEttBf7f6IH9d6aeF4w==", "user"=>{"name"=>"hank123", "age"=>"18", "password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"註冊"}
+Unpermitted parameters: age, confirm_password
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "hank123"], ["password_digest", "$2a$10$GjejfloQRrvZxQeeAkscpOuBrzT8xCzKXIpi7vYqW2w0qgKRVvKmW"], ["created_at", "2016-08-19 00:26:50.522884"], ["updated_at", "2016-08-19 00:26:50.522884"]]
+  [1m[35m (2.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/home
+Completed 302 Found in 90ms (ActiveRecord: 2.7ms)
+
+
+Started POST "/users" for ::1 at 2016-08-19 08:26:50 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cTBmbIquzjni5wBSo2UE2kZpfbAjdIVpHoSvjtFA9Dt/xVil3TYzwnH7abaUUptFbqGSEttBf7f6IH9d6aeF4w==", "user"=>{"name"=>"hank123", "age"=>"18", "password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"註冊"}
+Unpermitted parameters: age, confirm_password
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "hank123"], ["password_digest", "$2a$10$5BNgh5rxsqF/2X8efS8/b.3lrx0bjEZ/HMd.9F7ISXeWLEIyYWa2m"], ["created_at", "2016-08-19 00:26:50.629567"], ["updated_at", "2016-08-19 00:26:50.629567"]]
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 101ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/home" for ::1 at 2016-08-19 08:26:50 +0800
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:26:50 +0800
+Processing by RegionsController#index as HTML
+  [1m[35mRegion Load (0.6ms)[0m  SELECT "regions".* FROM "regions"
+  Rendered regions/index.html.haml within layouts/application (3.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:28:46 +0800
+Processing by RegionsController#index as HTML
+  [1m[35mRegion Load (0.8ms)[0m  SELECT "regions".* FROM "regions"
+  Rendered regions/index.html.haml within layouts/application (10.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 83ms (Views: 73.3ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:28:46 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:28:46 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:28:46 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:28:46 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:28:46 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:28:46 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:28:46 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:28:46 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:28:46 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:28:46 +0800
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:28:48 +0800
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...id, redirect_to home_index_path, notice: 'User was successfu...
+...                               ^:
+  app/controllers/users_controller.rb:17:in `'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:457:in `block in load_file'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:647:in `new_constants_in'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:456:in `load_file'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:354:in `require_or_load'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:494:in `load_missing_constant'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `constantize'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:566:in `get'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:597:in `constantize'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `<main>'
+
+
+
+Started POST "/__better_errors/9103f2dfb1c11363/variables" for ::1 at 2016-08-19 08:28:48 +0800
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:29:24 +0800
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...id, redirect_to home_index_path }
+...                               ^:
+  app/controllers/users_controller.rb:17:in `'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:457:in `block in load_file'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:647:in `new_constants_in'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:456:in `load_file'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:354:in `require_or_load'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:494:in `load_missing_constant'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `constantize'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:566:in `get'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:597:in `constantize'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `<main>'
+
+
+
+Started POST "/__better_errors/7a3c729a959d7e7a/variables" for ::1 at 2016-08-19 08:29:24 +0800
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:29:26 +0800
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...id, redirect_to home_index_path }
+...                               ^:
+  app/controllers/users_controller.rb:17:in `'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:457:in `block in load_file'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:647:in `new_constants_in'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:456:in `load_file'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:354:in `require_or_load'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:494:in `load_missing_constant'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `constantize'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:566:in `get'
+  activesupport (4.2.6) lib/active_support/dependencies.rb:597:in `constantize'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `<main>'
+
+
+
+Started POST "/__better_errors/90949864f6956f72/variables" for ::1 at 2016-08-19 08:29:26 +0800
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:29:51 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (4.1ms)
+  [1m[35mRegion Load (0.6ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 123ms (Views: 102.4ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:29:51 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:29:51 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:29:51 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:29:51 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:29:51 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:29:51 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:29:51 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:29:51 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:29:51 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:29:51 +0800
+
+
+Started POST "/users" for ::1 at 2016-08-19 08:30:07 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RaG0THgtWggQECITYxYYyKEhoTRntIrlwLd3W7qp0v1LVIqFL7Wn84MMS/dUIYdXielOlp+BcDskE6eIgk6jJQ==", "user"=>{"name"=>"hanknk", "age"=>"12", "password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"註冊"}
+Unpermitted parameters: age, confirm_password
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "hanknk"], ["password_digest", "$2a$10$BzoKhPMP3NogHIKPUMcsPeDMkIm6R7tsLnVWnSaVyN8GnuiACZ1za"], ["created_at", "2016-08-19 00:30:07.938183"], ["updated_at", "2016-08-19 00:30:07.938183"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mRegion Load (0.4ms)[0m  SELECT "regions".* FROM "regions"
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 2.5ms)
+
+NameError - undefined local variable or method `user' for #<UsersController:0x007fc743f5a6b0>:
+  app/controllers/users_controller.rb:16:in `block in create'
+  actionpack (4.2.6) lib/action_controller/metal/mime_responds.rb:212:in `respond_to'
+  app/controllers/users_controller.rb:13:in `create'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `<main>'
+
+
+
+Started POST "/__better_errors/380c88702ec3686c/variables" for ::1 at 2016-08-19 08:30:08 +0800
+
+
+Started POST "/users" for ::1 at 2016-08-19 08:30:54 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RaG0THgtWggQECITYxYYyKEhoTRntIrlwLd3W7qp0v1LVIqFL7Wn84MMS/dUIYdXielOlp+BcDskE6eIgk6jJQ==", "user"=>{"name"=>"hanknk", "age"=>"12", "password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"註冊"}
+Unpermitted parameters: age, confirm_password
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "hanknk"], ["password_digest", "$2a$10$T/3rwLWzGWh9Hk40xRzfY.s/x08a6FQ13XiGAt9BWnmaXnY7cdWvW"], ["created_at", "2016-08-19 00:30:54.686846"], ["updated_at", "2016-08-19 00:30:54.686846"]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 103ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/home" for ::1 at 2016-08-19 08:30:54 +0800
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:30:54 +0800
+Processing by RegionsController#index as HTML
+  [1m[35mRegion Load (0.4ms)[0m  SELECT "regions".* FROM "regions"
+  Rendered regions/index.html.haml within layouts/application (8.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 36ms (Views: 32.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:30:54 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:30:54 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:30:54 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:30:54 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:30:54 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:30:54 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:30:54 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:30:54 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:30:54 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:30:54 +0800
+
+
+Started GET "/logout" for ::1 at 2016-08-19 08:31:14 +0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-19 08:31:14 +0800
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:31:14 +0800
+Processing by RegionsController#index as HTML
+  [1m[35mRegion Load (0.4ms)[0m  SELECT "regions".* FROM "regions"
+  Rendered regions/index.html.haml within layouts/application (2.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2016-08-19 08:31:17 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (5.7ms)
+  [1m[35mRegion Load (0.6ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:31:22 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (3.8ms)
+  [1m[36mRegion Load (0.5ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for ::1 at 2016-08-19 08:32:01 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QoPlHf05oZLXgWaXhhPZ2h8FQSKx/NeoBZOwgZ3SlPpMdtvUqqFcaUSdD3OxJEZFN82ugEnJLXbhN2BSpTXlIg==", "user"=>{"name"=>"hank222", "age"=>"16", "password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"註冊"}
+Unpermitted parameters: age, confirm_password
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "hank222"], ["password_digest", "$2a$10$76eKLl5/Lt3lPgDLkx0CuufHD1jYT/LZduRfRFn4q6AT.oUfWPmZi"], ["created_at", "2016-08-19 00:32:02.040320"], ["updated_at", "2016-08-19 00:32:02.040320"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/home
+Completed 302 Found in 95ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/home" for ::1 at 2016-08-19 08:32:02 +0800
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:32:02 +0800
+Processing by RegionsController#index as HTML
+  [1m[36mRegion Load (0.4ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+  Rendered regions/index.html.haml within layouts/application (2.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/logout" for ::1 at 2016-08-19 08:32:09 +0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-19 08:32:09 +0800
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:32:09 +0800
+Processing by RegionsController#index as HTML
+  [1m[36mRegion Load (0.3ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+  Rendered regions/index.html.haml within layouts/application (2.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2016-08-19 08:32:11 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.6ms)
+  [1m[36mRegion Load (0.3ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2016-08-19 08:44:17 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (4.3ms)
+  [1m[35mRegion Load (0.8ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 130ms (Views: 117.0ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:44:17 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:44:17 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:44:17 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:44:17 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:44:17 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:44:17 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:44:17 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:44:17 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:44:17 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:44:17 +0800
+
+
+Started GET "/login" for ::1 at 2016-08-19 08:44:19 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.9ms)
+  [1m[36mRegion Load (0.5ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:44:19 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:44:19 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:44:19 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:44:19 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:44:19 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:44:19 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:44:19 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:44:19 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:44:19 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:44:19 +0800
+
+
+Started GET "/login" for ::1 at 2016-08-19 08:44:30 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.7ms)
+  [1m[35mRegion Load (0.6ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:44:39 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (3.7ms)
+  [1m[36mRegion Load (0.4ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 35ms (Views: 25.7ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/users" for ::1 at 2016-08-19 08:44:52 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fMufqCKOfZCj48RvZpo5UCiLM9ptO0ETL9JwS3vn0O5yPqFhdRaAazD/rYtRrabPAEPceJUOu83LdqCYQwChNg==", "user"=>{"name"=>"123123", "age"=>"18", "password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"註冊"}
+Unpermitted parameters: age, confirm_password
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "123123"], ["password_digest", "$2a$10$Ez.vsQdF3wcD8019IyZ3s.2BN0BlYUKcNblTYNGOC13j9RHUf7PZO"], ["created_at", "2016-08-19 00:44:52.133346"], ["updated_at", "2016-08-19 00:44:52.133346"]]
+  [1m[35m (2.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/home
+Completed 302 Found in 87ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/home" for ::1 at 2016-08-19 08:44:52 +0800
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:44:52 +0800
+Processing by RegionsController#index as HTML
+  [1m[36mRegion Load (0.4ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+  Rendered regions/index.html.haml within layouts/application (2.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/logout" for ::1 at 2016-08-19 08:44:58 +0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-19 08:44:58 +0800
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:44:58 +0800
+Processing by RegionsController#index as HTML
+  [1m[36mRegion Load (0.4ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+  Rendered regions/index.html.haml within layouts/application (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2016-08-19 08:44:59 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (2.4ms)
+  [1m[36mRegion Load (0.5ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for ::1 at 2016-08-19 08:47:08 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.7ms)
+  [1m[35mRegion Load (0.5ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 42ms (Views: 33.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:47:08 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:47:08 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:47:08 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:47:08 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:47:08 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:47:08 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:47:08 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:47:08 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:47:08 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:47:08 +0800
+
+
+Started GET "/login" for ::1 at 2016-08-19 08:47:09 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.7ms)
+  [1m[36mRegion Load (0.4ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:47:09 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:47:09 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:47:09 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:47:09 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:47:09 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:47:09 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:47:09 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:47:09 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:47:09 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:47:09 +0800
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:47:13 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (2.7ms)
+  [1m[35mRegion Load (0.4ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 33ms (Views: 22.6ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/users" for ::1 at 2016-08-19 08:47:22 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/2w59FhrtFhEHxbb27HtJ3y2WFMfQDpRfpMFYbPe3p3xmQc9D/NJo9cDfz/shnK4VH638ed1wI+aN9WyizmvRQ==", "user"=>{"name"=>"123123123", "age"=>"123", "password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"註冊"}
+Unpermitted parameters: age, confirm_password
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "123123123"], ["password_digest", "$2a$10$N1ieHsF.qkiy47/zp3aap.idrybbNBoJfvG.t1p6Hp7t0gg6wh2PC"], ["created_at", "2016-08-19 00:47:22.909610"], ["updated_at", "2016-08-19 00:47:22.909610"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 86ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/home" for ::1 at 2016-08-19 08:47:22 +0800
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:47:22 +0800
+Processing by RegionsController#index as HTML
+  [1m[35mRegion Load (0.4ms)[0m  SELECT "regions".* FROM "regions"
+  Rendered regions/index.html.haml within layouts/application (2.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 39ms (Views: 38.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/logout" for ::1 at 2016-08-19 08:47:28 +0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-19 08:47:28 +0800
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:47:28 +0800
+Processing by RegionsController#index as HTML
+  [1m[35mRegion Load (0.4ms)[0m  SELECT "regions".* FROM "regions"
+  Rendered regions/index.html.haml within layouts/application (2.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2016-08-19 08:47:29 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.7ms)
+  [1m[35mRegion Load (0.5ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:48:33 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (6.9ms)
+  [1m[36mRegion Load (0.6ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 114ms (Views: 92.9ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:48:35 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (2.6ms)
+  [1m[35mRegion Load (0.4ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:48:35 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:48:35 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:48:35 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:48:35 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:48:35 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:48:35 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:48:35 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:48:35 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:48:35 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:48:35 +0800
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:48:37 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (4.0ms)
+  [1m[36mRegion Load (0.4ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2016-08-19 08:48:47 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6StvNVMEABkKgOEcGCm8KPZi+3TbiFWnKEiZpxFdiKnn3lH8BJz94pmciPgvHiO33qoU1iO9r3nM7El0Kbr5cQ==", "user"=>{"name"=>"hank11", "age"=>"12", "password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"註冊"}
+Unpermitted parameters: age, confirm_password
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "hank11"], ["password_digest", "$2a$10$FsLc.PUdPWI5fMHaDiBDYu2ShmrzC5xjJoBU8JB/6se3MxvIVpd6C"], ["created_at", "2016-08-19 00:48:47.626076"], ["updated_at", "2016-08-19 00:48:47.626076"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/home
+Completed 302 Found in 100ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/home" for ::1 at 2016-08-19 08:48:47 +0800
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:48:47 +0800
+Processing by RegionsController#index as HTML
+  [1m[36mRegion Load (0.6ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+  Rendered regions/index.html.haml within layouts/application (5.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/logout" for ::1 at 2016-08-19 08:48:53 +0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-19 08:48:53 +0800
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:48:53 +0800
+Processing by RegionsController#index as HTML
+  [1m[36mRegion Load (0.3ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+  Rendered regions/index.html.haml within layouts/application (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2016-08-19 08:48:54 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (2.1ms)
+  [1m[36mRegion Load (0.5ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for ::1 at 2016-08-19 08:53:18 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.7ms)
+  [1m[35mRegion Load (0.6ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 85ms (Views: 74.8ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:53:18 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:53:18 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:53:18 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:53:18 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:53:18 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:53:18 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:53:18 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:53:18 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:53:18 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:53:18 +0800
+
+
+Started GET "/login" for ::1 at 2016-08-19 08:53:20 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.5ms)
+  [1m[36mRegion Load (0.4ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:53:20 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:53:20 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:53:20 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:53:20 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:53:20 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:53:20 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:53:20 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:53:20 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:53:20 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:53:20 +0800
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:53:23 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (3.9ms)
+  [1m[35mRegion Load (0.4ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 41ms (Views: 27.6ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/users" for ::1 at 2016-08-19 08:53:32 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eTU0wDRp4uTirP5M6331TaS5oRxgnDVzPPZonLgGxwB3wAoJY/EfH3Gwl6jcSmrSjHFOvpipz63YUrhPgOG22A==", "user"=>{"name"=>"1234", "age"=>"`4", "password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"註冊"}
+Unpermitted parameters: age, confirm_password
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "1234"], ["password_digest", "$2a$10$ZtzUbuPvIREctIGfuYiNv.IMcu9oD.O8FXN0s5J5t82dsKfJOnC/."], ["created_at", "2016-08-19 00:53:32.483986"], ["updated_at", "2016-08-19 00:53:32.483986"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 82ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/home" for ::1 at 2016-08-19 08:53:32 +0800
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:53:32 +0800
+Processing by RegionsController#index as HTML
+  [1m[35mRegion Load (0.7ms)[0m  SELECT "regions".* FROM "regions"
+  Rendered regions/index.html.haml within layouts/application (3.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/logout" for ::1 at 2016-08-19 08:53:38 +0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-19 08:53:38 +0800
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:53:38 +0800
+Processing by RegionsController#index as HTML
+  [1m[35mRegion Load (0.5ms)[0m  SELECT "regions".* FROM "regions"
+  Rendered regions/index.html.haml within layouts/application (3.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for ::1 at 2016-08-19 08:53:40 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.8ms)
+  [1m[35mRegion Load (0.4ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2016-08-19 08:54:35 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.6ms)
+  [1m[36mRegion Load (0.4ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 34ms (Views: 26.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:54:36 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:54:36 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:54:36 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:54:36 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:54:36 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:54:36 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:54:36 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:54:36 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:54:36 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:54:36 +0800
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:54:37 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (5.7ms)
+  [1m[35mRegion Load (0.9ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 47ms (Views: 33.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:54:39 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (2.6ms)
+  [1m[36mRegion Load (0.4ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-19 08:54:39 +0800
+
+
+Started GET "/assets/admin/products.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:54:39 +0800
+
+
+Started GET "/assets/carts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:54:39 +0800
+
+
+Started GET "/assets/category.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:54:39 +0800
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:54:39 +0800
+
+
+Started GET "/assets/products.self-1b8e059f6f957cbd290002034b3c9ee3f936f3e85402997375b88d8d172cdd8b.js?body=1" for ::1 at 2016-08-19 08:54:39 +0800
+
+
+Started GET "/assets/region.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:54:39 +0800
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:54:39 +0800
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-08-19 08:54:39 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-08-19 08:54:39 +0800
+
+
+Started GET "/users/new" for ::1 at 2016-08-19 08:54:41 +0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (4.8ms)
+  [1m[35mRegion Load (0.4ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2016-08-19 08:54:50 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fXAoT3Zx7c2luyn0d8K8WeDxoZJUJpPVVLiRTR/l8ThzhRaGIekQNjanQBBA9SPGyDlOMKwTaQuwHEGeJwKA4A==", "user"=>{"name"=>"jkjkjk", "age"=>"12", "password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"註冊"}
+Unpermitted parameters: age, confirm_password
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "jkjkjk"], ["password_digest", "$2a$10$a6S5dFYUSCC2E0SlqdStOeGKD63STIH8NBQxF5.UIP.x9.S7AaFI6"], ["created_at", "2016-08-19 00:54:50.167225"], ["updated_at", "2016-08-19 00:54:50.167225"]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/32
+Completed 302 Found in 90ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users/32" for ::1 at 2016-08-19 08:54:50 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 32]]
+  Rendered users/show.html.haml within layouts/application (0.2ms)
+  [1m[36mRegion Load (0.3ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/logout" for ::1 at 2016-08-19 08:55:08 +0800
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-19 08:55:08 +0800
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/regions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for ::1 at 2016-08-19 08:55:08 +0800
+Processing by RegionsController#index as HTML
+  [1m[35mRegion Load (0.4ms)[0m  SELECT "regions".* FROM "regions"
+  Rendered regions/index.html.haml within layouts/application (2.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "regions".* FROM "regions"[0m
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2016-08-19 08:55:10 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.7ms)
+  [1m[35mRegion Load (0.5ms)[0m  SELECT "regions".* FROM "regions"
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.5ms)
